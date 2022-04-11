@@ -1,0 +1,22 @@
+{
+    "category":[
+        {
+            "id":1,
+            "name":"Single Room",
+            "category":"single",
+            "img":"https://i.ibb.co/hLwHm5D/single-room.jpg"
+        },
+        {
+            "id":2,
+            "name":"Couple Room",
+            "category":"couple",
+            "img":"https://i.ibb.co/GM4Vx5C/couple-room.jpg"
+        },
+        {
+            "id":3,
+            "name":"Family Room",
+            "category":"family",
+            "img":"https://i.ibb.co/ZLqPHcS/Family-room.jpg"
+        }
+    ]
+}
