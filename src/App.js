@@ -10,6 +10,8 @@ import RoomDetail from './Components/RoomDetail/RoomDetail';
 import NotFound from './Components/NotFound/NotFound';
 import Login from './Components/Login/Login';
 import toast, { Toaster } from 'react-hot-toast';
+import RequireAuth from './Components/RequireAuth/RequireAuth';
+import Register from './Components/Register/Register';
 
 function App() {
   return (
@@ -18,11 +20,16 @@ function App() {
       <Toaster />
         <Routes>
           <Route path='/' element={<Home></Home>}></Route>
-          <Route path='/room/:roomType' element={<Rooms></Rooms>}>
+          <Route path='/room/:roomType' element={<RequireAuth>
+            <Rooms></Rooms>
+          </RequireAuth>}>
              {<Route path=':room' element={''}></Route> }
           </Route>
-          <Route path='/room' element={<Home></Home>}></Route>
+          <Route path='/room' element={
+            <Home></Home>
+          }></Route>
           <Route path='/login' element={<Login></Login>}></Route>
+          <Route path='/register' element={<Register></Register>}></Route>
           <Route path='*' element={<NotFound></NotFound>}></Route>
         </Routes>
       <Footer></Footer>
