@@ -1,0 +1,32 @@
+{
+    "family":[
+        {   "id":1,
+            "type":"Ultra Premium",
+            "price":500,
+            "rating":4.5,
+            "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident deleniti laboriosam libero.",
+            "img":""
+        },
+        {   "id":2,
+            "type":"Premium",
+            "price":300,
+            "rating":4.0,
+            "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident deleniti laboriosam libero.",
+            "img":""
+        },
+        {   "id":3,
+            "type":"Reguler",
+            "price":250,
+            "rating":4.0,
+            "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident deleniti laboriosam libero.",
+            "img":""
+        },
+        {   "id":4,
+            "type":"Reguler Extra large",
+            "price":200,
+            "rating":4.0,
+            "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident deleniti laboriosam libero.",
+            "img":""
+        }
+    ]
+}

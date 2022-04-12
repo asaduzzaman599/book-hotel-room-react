@@ -12,7 +12,7 @@ const Room = ({room,setRoom}) => {
             setRoom(room)
             navigate(`/room/${rt}/${roomType}`)
         }} className='w-full py-10 bg-yellow-100 border hover:bg-orange-300'>
-            <h3>Room Type : {type}</h3>
+            <h3> {type}</h3>
         </div>
     );
 };

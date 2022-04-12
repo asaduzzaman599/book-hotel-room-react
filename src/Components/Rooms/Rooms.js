@@ -12,7 +12,7 @@ const Rooms = () => {
     useEffect(()=>{
         fetch(`/data/${roomType}room.json`)
         .then(res=> res.json())
-        .then(data=>setRooms(data.single))
+        .then(data=>setRooms(data[roomType]))
     },[roomType]);
 
     console.log(room)
@@ -27,7 +27,7 @@ const Rooms = () => {
                 }
             </div>
             <div className='col-span-4'>
-               <RoomDetail room={room}></RoomDetail>
+               {room.id && <RoomDetail room={room}></RoomDetail>}
             </div>
         </div>
     );
