@@ -32,13 +32,13 @@ const Login = () => {
                     <input onChange={(event)=>setUserInfo({
                         email:{value:event.target.value},
                         password:{value:userInfo.password.value}
-                    })} className='w-full border-b-2 h-8 mb-4 focus:border-blue-400 outline-none' type="email" name="" id="" required />
+                    })} className='w-full border-b-2 h-8 mb-4 focus:border-blue-400 outline-none' type="email" name="" id="" placeholder='Your Email' required />
                 </div>
                 <div className="input-group">
                     <input onChange={(event)=>setUserInfo({
                         email:{value:userInfo.email.value},
                         password:{value:event.target.value}
-                    })} className='w-full border-b-2 h-8  mb-4 focus:border-blue-400 outline-none' type="password" name="" id="" required />
+                    })} className='w-full border-b-2 h-8  mb-4 focus:border-blue-400 outline-none' type="password" name="" id="" placeholder='Your Password' required />
                 </div>
                 <p className='my-4'>Don't have any account? <Link to='/register' className='text-blue-400'>Register</Link></p>
                 <input className='px-10 py-3 w-full  bg-slate-500 text-white font-semibold' type="submit" value="Login" />

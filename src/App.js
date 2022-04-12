@@ -12,6 +12,7 @@ import Login from './Components/Login/Login';
 import toast, { Toaster } from 'react-hot-toast';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
 import Register from './Components/Register/Register';
+import About from './Components/About/About';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/room' element={
             <Home></Home>
           }></Route>
+          <Route path='/about' element={<About></About>}></Route>
           <Route path='/login' element={<Login></Login>}></Route>
           <Route path='/register' element={<Register></Register>}></Route>
           <Route path='*' element={<NotFound></NotFound>}></Route>
