@@ -16,7 +16,7 @@ const Header = () => {
                 <li><NavLink className="font-semibold text-slate-600" style={({isActive})=>isActive?{color:'goldenrod'}:{}}  to='/about'>About</NavLink></li>
                 {
                     user ? <li>
-                        <button onClick={()=>signOut(auth)} className='px-6 py-2 rounded bg-slate-800 font-medium text-slate-600'>Logout</button>
+                        <button onClick={()=>signOut(auth)} className='px-6 py-2 rounded bg-slate-800 font-medium text-slate-600 hover:text-white'>Logout</button>
                     </li>
                     :<li><NavLink className="font-semibold text-slate-600" style={({isActive})=>isActive?{color:'goldenrod'}:{}}  to='/login'>Login</NavLink></li>
                 }
