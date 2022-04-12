@@ -1,10 +1,12 @@
 import React from 'react';
+import useFirebase from '../../useFirebse';
 
 const Login = () => {
 
+    const {user,error,googleSignIn} = useFirebase()
 
+    console.log(user)
     const handleSubmit = ()=>{
-
     }
     return (
         <div className='w-2/6 mx-auto p-4 border'>
@@ -20,7 +22,7 @@ const Login = () => {
                 <input className='px-10 py-3 w-full  bg-slate-500 text-white font-semibold' type="submit" value="Login" />
             </form>
             <div className='w-full border  my-6'></div>
-            <button className=' py-2 w-full border  font-medium flex items-center justify-center gap-8 py-4'><img src='https://img.icons8.com/fluency/344/google-logo.png' width={25}/>Continue with Google</button>
+            <button onClick={()=>googleSignIn()} className=' py-2 w-full border  font-medium flex items-center justify-center gap-8 py-4'><img src='https://img.icons8.com/fluency/344/google-logo.png' width={25}/>Continue with Google</button>
         </div>
     );
 };
