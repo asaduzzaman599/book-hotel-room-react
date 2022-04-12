@@ -9,11 +9,13 @@ import Room from './Components/Room/Room';
 import RoomDetail from './Components/RoomDetail/RoomDetail';
 import NotFound from './Components/NotFound/NotFound';
 import Login from './Components/Login/Login';
+import toast, { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <div className="App min-h-screen flex flex-col  justify-between ">
       <Header></Header>
+      <Toaster />
         <Routes>
           <Route path='/' element={<Home></Home>}></Route>
           <Route path='/room/:roomType' element={<Rooms></Rooms>}>

@@ -8,7 +8,7 @@ const RoomDetail = ({room}) => {
     return (
         <div className='w-2/4 mx-auto shadow p-6'>
             <img src="" alt="" />
-            <h3>{type}</h3>
+            <h3 className='text-2xl font-bold'>{type}</h3>
             <p>{description}</p>
             <RatingComponent rating={rating}></RatingComponent>
             <h3>Price: {price}</h3>
