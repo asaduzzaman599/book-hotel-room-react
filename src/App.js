@@ -8,6 +8,7 @@ import Rooms from './Components/Rooms/Rooms';
 import Room from './Components/Room/Room';
 import RoomDetail from './Components/RoomDetail/RoomDetail';
 import NotFound from './Components/NotFound/NotFound';
+import Login from './Components/Login/Login';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route path='/room/:roomType' element={<Rooms></Rooms>}>
              {<Route path=':room' element={''}></Route> }
           </Route>
+          <Route path='/room' element={<Home></Home>}></Route>
+          <Route path='/login' element={<Login></Login>}></Route>
           <Route path='*' element={<NotFound></NotFound>}></Route>
         </Routes>
       <Footer></Footer>
